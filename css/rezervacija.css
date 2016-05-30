@@ -1,0 +1,250 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700italic,300&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext);
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+html{
+	height: 100%;
+	width: 100%;
+}
+
+.navbar {
+	background-color: #ffffff;
+	height: 70px;
+	width: 100%;
+	padding-left: 4%;
+	padding-right: 3%;
+}
+
+.navbar-brand {
+	width: 8.85%;
+	height: auto;
+}
+
+.navbar ul {
+	display: inline;
+	float: right;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.navbar ul li {
+	display: inline;
+}
+
+.link {
+	display: inline;
+	color: #000;
+	text-decoration: none;
+	text-align: center !important;
+	width: 150px;
+	font-size: 1em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	padding-right: 40px;
+}
+
+.link:hover {
+	color: #c5a981;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.reservation {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+    width: 80%;
+    margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.info-text {
+	text-align: left;
+	width: 100%;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+h2.heading {
+	font-size: 2.2em;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	color: #506982;
+	padding-bottom: 3px;
+}
+
+.controls {
+	text-align: left;
+	position: relative;
+}
+
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="number"],
+.controls input[type="date"],
+.controls input[type="tel"],
+.controls textarea,
+.controls button,
+.controls select {
+	padding: 12px;
+	font-size: 14px;
+	border: 1px solid #c6c6c6;
+	width: 100%;
+	margin-bottom: 18px;
+	color: #888;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	border-radius: 2px;
+	transition: all 0.3s;
+}
+
+.controls input[type="text"]:focus, 
+.controls input[type="text"]:hover,
+.controls input[type="email"]:focus,
+.controls input[type="email"]:hover,
+.controls input[type="number"]:focus,
+.controls input[type="number"]:hover,
+.controls input[type="date"]:focus,
+.controls input[type="date"]:hover,
+.controls input[type="tel"]:focus,
+.controls input[type="tel"]:hover,
+.controls textarea:focus,
+.controls textarea:hover,
+.controls button:focus,
+.controls button:hover,
+.controls select:focus,
+.controls select:hover {
+	outline: none;
+	border-color: #9FB1C1;
+}
+
+.controls input[type="text"]:focus + label, 
+.controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="number"]:focus + label,
+.controls input[type="number"]:hover + label,
+.controls input[type="date"]:focus + label,
+.controls input[type="date"]:hover + label,
+.controls input[type="tel"]:focus + label,
+.controls input[type="tel"]:hover + label,
+.controls textarea:focus + label,
+.controls textarea:hover + label,
+.controls button:focus + label,
+.controls button:hover + label,
+.controls select:focus + label,
+.controls select:hover + label {
+	color: #bdcc00;
+	cursor: text;
+	top: -11px;
+}
+
+.controls .fa-sort {
+	position: absolute;
+	right: 10px;
+	top: 17px;
+	color: #999;
+}
+.controls select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+.controls label {
+	position: absolute;
+	left: 8px;
+	top: 12px; 
+	color: #999;
+	font-size: 16px;
+	display: inline-block;
+	padding: 4px 10px;
+	font-weight: 400;
+	background-color: rgba(255, 255, 255, 0);
+	transition: color 0.3s, top 0.3s;
+	background-color: white;
+    top: -11px;
+}
+
+.controls label:hover {
+    color: #bdcc00;
+    top: -11px;
+}
+
+.controls textarea {
+	resize: none;
+	height: 200px;
+}
+
+button {
+    text-align: center;
+    height: 60px;
+    width: 400px;
+    line-height: 58px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #c5a981;
+    color: #c5a981;
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+    font-size: 1.4em;
+    transition: all .3s ease-in;
+}
+
+button:hover {
+	background-color: #224c60;
+}
+
+[class*='col-'] {
+	padding: 0px;
+	float: left;
+	padding-right: 10px;
+}
+.row [class*='col-']:last-of-type {
+	padding-right: 0;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer ul li {
+	display: inline;
+}
+
+
+footer li a{
+	padding-right: 4%;
+	text-decoration: none;
+	display: inline;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	color: #000;
+	transition: all .2s ease-out;
+}
+
+footer li a:hover{
+	color: #c5a981;
+}
+
+footer p{
+	padding: 10px 0px 10px 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+}
+
+footer ul{
+	text-align: center;
+}
+

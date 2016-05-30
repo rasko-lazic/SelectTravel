@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin: 30px;    
+    padding-top: 50px;
+    color: #212121;
+    font-size: 2em;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-default{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+
+#container {
+    display: block;
+    height: 619px;
+    width: 960px;
+    margin: auto;
+    border: 8px white solid;
+    box-shadow: 0px 0px 3px white;
+    position: relative;
+    /*margin-top: 60px;*/
+    margin-bottom: 100px;
+}
+
+#images {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;   
+    position: relative;
+}
+
+#images>ul {
+    list-style: none;
+    height: 619px;
+    width: 500%;  
+    overflow: hidden;
+    position: relative;
+    left: 10px;
+    transition: left .8s cubic-bezier(0.25,0.1,0.25,1);
+}
+
+#images>ul>li {
+    width: 20%;
+    height: 619px;
+    float: left;  
+    position: relative;
+}
+
+#images>ul>li>img {
+    margin: auto;
+    height: 100%;
+}
+
+#container input[type=radio] {
+    display: none;
+}
+
+#container label{
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    z-index: 100;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(200,200,200,1);
+    border-radius: 50%;
+    cursor: pointer; 
+    box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+    transition: background-color .2s;
+}
+
+#container label:active {
+    bottom: -41px; }
+
+
+#container input[type=radio]#button-1:checked~label[for=button-1] { background-color: rgba(100,100,100,1); }/*primeni na elemente koji se nalaye posle chekiranog button1*/
+#container input[type=radio]#button-2:checked~label[for=button-2] { background-color: rgba(100,100,100,1); }
+#container input[type=radio]#button-3:checked~label[for=button-3] { background-color: rgba(100,100,100,1); }
+#container input[type=radio]#button-4:checked~label[for=button-4] { background-color: rgba(100,100,100,1); }
+#container input[type=radio]#button-5:checked~label[for=button-5] { background-color: rgba(100,100,100,1); }
+
+
+#container label[for=button-1] { margin-left: -48px; }
+#container label[for=button-2] { margin-left: -24px; }
+#container label[for=button-4] { margin-left: 24px; }
+#container label[for=button-5] { margin-left: 48px; }
+
+#container input[type=radio]#button-1:checked~#images>ul { left: 0; }
+#container input[type=radio]#button-2:checked~#images>ul { left: -100%; }
+#container input[type=radio]#button-3:checked~#images>ul { left: -200%; }
+#container input[type=radio]#button-4:checked~#images>ul { left: -300%; }
+#container input[type=radio]#button-5:checked~#images>ul { left: -400%; }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta author="Ana Žamos zamos.ana@gmail.com">
+        <meta keywords="Na ovom sajtu ćete naći sva dešavanja vezana za muzičke festivale širom Evrope. Pomoću nas možete rezervisati karte koje će potom biti dostavljene na Vašu kućnu adresu.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/helpers.css">
+        <link rel="stylesheet" href="css/rezervacija.css">
+
+         <title>Rezervacija</title>
+    </head>
+    <body>
+        <header class="navbar navbar-default">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="SelectTravel logo" />
+            </a>
+            <ul>
+                <li><a href="index.html" class="link">POČETNA</a></li>
+                <li><a href="lastminute.html" class="link">LAST MINUTE PONUDE</a></li>
+                <li><a href="galerija.html" class="link"> GALERIJA</a></li>
+                <li><a href="rezervacija.html" class="link">REZERVACIJA</a></li>
+            </ul>
+        </header>
+        <!--header end-->
+        <section class="reservation">
+            <div class="basic-info">
+                <h2 class="heading">Rezervacija</h2>
+                <hr class="divider">
+                <div class="controls">
+                    <input type="text" class="floatLabel" name="name">
+                    <label for="name">Ime i Prezime</label>
+                </div>
+                <div class="controls">
+                    <input type="email" class="floatLabel" name="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="controls">
+                            <input type="text" class="floatLabel" name="street">
+                            <label for="street">Ulica</label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="controls">
+                            <input type="number" class="floatLabel" name="street-number">
+                            <label for="street-number">Broj</label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="controls">
+                            <input type="number" class="floatLabel" name="street-number">
+                            <label for="street-number">Stan</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="controls">
+                            <input type="text" class="floatLabel" name="city">
+                            <label for="city">Grad</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="controls">
+                            <input type="text" class="floatLabel" name="post-code">
+                            <label for="post-code">Postanski kod</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="controls">
+                            <input type="text" class="floatLabel" name="city">
+                            <label for="city">Telefon</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <h2 class="heading">Detalji</h2>
+                <hr class="divider">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="controls">
+                            <input type="date" id="arrive" class="floatLabel" name="arrive">
+                            <label for="arrive" class="label-date">Datum polaska</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="controls">
+                            <input type="date" id="depart" class="floatLabel" name="depart">
+                            <label for="depart" class="label-date">Datum dolaska</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="controls">
+                            <select class="floatLabel">
+                                <option value="blank"></option>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                        </select>
+                            <label>Osoba</label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="controls">
+                            <i class="fa fa-sort"></i>
+                            <select class="floatLabel">
+                        <option value="blank"></option>
+                        <option value="deluxe" selected>With Bathroom</option>
+                        <option value="Zuri-zimmer">Without Bathroom</option>
+                    </select>
+                            <label>Room</label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="controls">
+                            <i class="fa fa-sort"></i>
+                            <select class="floatLabel">
+                        <option value="single-bed">Zweibett</option>
+                        <option value="double-bed" selected>Doppelbett</option>
+                    </select>
+                            <label for="fruit">Bedding</label>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+                <br>
+                <div class="controls">
+                    <textarea name="comments" class="floatLabel" id="comments"></textarea>
+                    <label for="comments">Comments</label>
+                </div>
+                <button type="submit" value="Submit">Submit</button>
+            </div>
+        </section>
+        <!--reservation end-->
+        <hr class="divider">
+        <footer>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="lastminute.html">Last minute ponude</a></li>
+                <li><a href="galerija.html"> Galerija</a></li>
+                <li><a href="rezervacija.html">Rezervacija</a></li>
+            </ul>
+            <p>Copyright by Ana Žamos <br>&copy 2016</p>
+        </footer>
+    </body>
+</html>
