@@ -126,7 +126,7 @@ h2.heading {
 .controls select:focus,
 .controls select:hover {
 	outline: none;
-	border-color: #9FB1C1;
+	border-color: #c5a981;
 }
 
 .controls input[type="text"]:focus + label, 
@@ -145,25 +145,19 @@ h2.heading {
 .controls button:hover + label,
 .controls select:focus + label,
 .controls select:hover + label {
-	color: #bdcc00;
+	color: #c5a981;
 	cursor: text;
-	top: -11px;
 }
 
-.controls .fa-sort {
-	position: absolute;
-	right: 10px;
-	top: 17px;
-	color: #999;
-}
 .controls select {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	cursor: pointer;
 }
+
 .controls label {
 	position: absolute;
-	left: 8px;
+	leftt: 8px;
 	top: 12px; 
 	color: #999;
 	font-size: 16px;
