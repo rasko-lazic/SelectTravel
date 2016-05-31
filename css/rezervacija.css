@@ -59,10 +59,58 @@ html{
 	font-weight: 400;
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-flow: row wrap;
 }
 
-a {
-	text-decoration: none;
+.reservation-info {
+	position: relative;
+	width: 40%;
+	min-width: 475px;
+}
+
+.reservation-info h2 {
+	font-size: 2.2em;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	color: #506982;
+	padding-bottom: 3px;
+	margin-bottom: 20px;
+}
+
+.reservation-info .description img {
+	padding-left: 20px;
+}
+
+.reservation-info .description {
+	font-size: 1.2em;
+	margin-right: 50px;
+	padding: 30px;
+	text-align: left;
+	border-radius: 4px;
+	background: rgba(63,176,172, 0.4)
+}
+
+.reservation-info .security {
+	background: rgba(0, 0, 0, .4);
+	margin-right: 80px;
+	padding: 20px;
+	text-align: left;
+	color: white;
+	border-radius: 4px;
+	position: absolute;
+	bottom: 0;
+}
+
+.reservation-info .security img {
+	margin-right: 20px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.reservation-form {
+	width:60%;
+	min-width: 645px;
 }
 
 .info-text {
@@ -88,14 +136,7 @@ h2.heading {
 	position: relative;
 }
 
-.controls input[type="text"],
-.controls input[type="email"],
-.controls input[type="number"],
-.controls input[type="date"],
-.controls input[type="tel"],
-.controls textarea,
-.controls button,
-.controls select {
+.floatLabel {
 	padding: 12px;
 	font-size: 14px;
 	border: 1px solid #c6c6c6;
@@ -109,44 +150,11 @@ h2.heading {
 	transition: all 0.3s;
 }
 
-.controls input[type="text"]:focus, 
-.controls input[type="text"]:hover,
-.controls input[type="email"]:focus,
-.controls input[type="email"]:hover,
-.controls input[type="number"]:focus,
-.controls input[type="number"]:hover,
-.controls input[type="date"]:focus,
-.controls input[type="date"]:hover,
-.controls input[type="tel"]:focus,
-.controls input[type="tel"]:hover,
-.controls textarea:focus,
-.controls textarea:hover,
-.controls button:focus,
-.controls button:hover,
-.controls select:focus,
-.controls select:hover {
+.floatLabel:focus,
+.floatLabel:hover {
 	outline: none;
 	border-color: #c5a981;
-}
-
-.controls input[type="text"]:focus + label, 
-.controls input[type="text"]:hover + label,
-.controls input[type="email"]:focus + label,
-.controls input[type="email"]:hover + label,
-.controls input[type="number"]:focus + label,
-.controls input[type="number"]:hover + label,
-.controls input[type="date"]:focus + label,
-.controls input[type="date"]:hover + label,
-.controls input[type="tel"]:focus + label,
-.controls input[type="tel"]:hover + label,
-.controls textarea:focus + label,
-.controls textarea:hover + label,
-.controls button:focus + label,
-.controls button:hover + label,
-.controls select:focus + label,
-.controls select:hover + label {
-	color: #c5a981;
-	cursor: text;
+	width: 90%;
 }
 
 .controls select {
@@ -155,9 +163,13 @@ h2.heading {
 	cursor: pointer;
 }
 
+.controls input[type="date"] {
+	background: url(../fonts/calendar-icon.png) no-repeat scroll 95% 8px;
+}
+
 .controls label {
 	position: absolute;
-	leftt: 8px;
+	left: 8px;
 	top: 12px; 
 	color: #999;
 	font-size: 16px;

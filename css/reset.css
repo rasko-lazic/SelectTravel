@@ -125,3 +125,10 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
+/*hiding date input spin button*/
+input::-webkit-inner-spin-button,
+input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
