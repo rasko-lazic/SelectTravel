@@ -1,33 +1,61 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700italic,300&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext);
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-h1 {
-    font-family: "Open Sans", sans-serif;
-    font-style: italic;
-    text-align: center;
-    margin: 30px;    
-    padding-top: 50px;
-    color: #212121;
-    font-size: 2em;
-}
+/*--------------------------------------fontovi------------------------------------------------------*/
 
-img{
-    width: 100%;
+html{
     height: 100%;
+    width: 100%;
 }
 
-.navbar-default{
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    z-index: 999;
+/**************navigacija***********/
+.navbar {
+    background-color: #ffffff;
+    height: 70px;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 3%;
 }
 
-#container {
+.navbar-brand {
+    width: 8.85%;
+    height: auto;
+}
+
+.navbar ul {
+    display: inline;
+    float: right;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.link {
+    display: inline;
+    color: #000;
+    text-decoration: none;
+    text-align: center !important;
+    width: 150px;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-right: 40px;
+}
+
+.link:hover{
+    color: #c5a981;
+}
+
+/*---------------------------------galerija---------------------------------------------------------*/
+
+.gallery-container {
     display: block;
     height: 619px;
     width: 960px;
@@ -35,45 +63,11 @@ img{
     border: 8px white solid;
     box-shadow: 0px 0px 3px white;
     position: relative;
-    /*margin-top: 60px;*/
+    margin-top: 60px;
     margin-bottom: 100px;
 }
 
-#images {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    overflow: hidden;   
-    position: relative;
-}
-
-#images>ul {
-    list-style: none;
-    height: 619px;
-    width: 500%;  
-    overflow: hidden;
-    position: relative;
-    left: 10px;
-    transition: left .8s cubic-bezier(0.25,0.1,0.25,1);
-}
-
-#images>ul>li {
-    width: 20%;
-    height: 619px;
-    float: left;  
-    position: relative;
-}
-
-#images>ul>li>img {
-    margin: auto;
-    height: 100%;
-}
-
-#container input[type=radio] {
-    display: none;
-}
-
-#container label{
+.gallery-container label{
     position: absolute;
     left: 50%;
     bottom: -40px;
@@ -83,28 +77,89 @@ img{
     background-color: rgba(200,200,200,1);
     border-radius: 50%;
     cursor: pointer; 
-    box-shadow: 0px 0px 3px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .8);
     transition: background-color .2s;
 }
 
-#container label:active {
-    bottom: -41px; }
+.gallery-container input[type=radio] {
+    display: none;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 10px solid white;  
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    transform: rotate(36000000000deg);
+    transition: all 7s ease-in-out;
+}
+
+.images ul {
+    list-style: none;
+    height: 619px;
+    width: 500%;  
+    overflow: hidden;
+    position: relative;
+    left: 10px;
+    transition: left .8s ease-in-out;
+}
+
+.images ul li {
+    width: 20%;
+    height: 619px;
+    float: left;  
+    position: relative;
+}
+
+/*******************primeni na elemente koji se nalaze posle chekiranog button1***************/
+
+.gallery-container .slider-control:checked + label {
+    background-color: rgba(100,100,100,1);
+}
 
 
-#container input[type=radio]#button-1:checked~label[for=button-1] { background-color: rgba(100,100,100,1); }/*primeni na elemente koji se nalaye posle chekiranog button1*/
-#container input[type=radio]#button-2:checked~label[for=button-2] { background-color: rgba(100,100,100,1); }
-#container input[type=radio]#button-3:checked~label[for=button-3] { background-color: rgba(100,100,100,1); }
-#container input[type=radio]#button-4:checked~label[for=button-4] { background-color: rgba(100,100,100,1); }
-#container input[type=radio]#button-5:checked~label[for=button-5] { background-color: rgba(100,100,100,1); }
+.gallery-container label[for=button-1] { margin-left: -48px; }
+.gallery-container label[for=button-2] { margin-left: -24px; }
+.gallery-container label[for=button-4] { margin-left: 24px; }
+.gallery-container label[for=button-5] { margin-left: 48px; }
+
+.gallery-container input[type=radio]#button-1:checked~.images>ul { left: 0; }
+.gallery-container input[type=radio]#button-2:checked~.images>ul { left: -100%; }
+.gallery-container input[type=radio]#button-3:checked~.images>ul { left: -200%; }
+.gallery-container input[type=radio]#button-4:checked~.images>ul { left: -300%; }
+.gallery-container input[type=radio]#button-5:checked~.images>ul { left: -400%; }
+
+/*----------------footer------------------*/
+
+footer ul li {
+    display: inline;
+}
 
 
-#container label[for=button-1] { margin-left: -48px; }
-#container label[for=button-2] { margin-left: -24px; }
-#container label[for=button-4] { margin-left: 24px; }
-#container label[for=button-5] { margin-left: 48px; }
+footer li a{
+    padding-right: 4%;
+    text-decoration: none;
+    display: inline;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    color: #000;
+    transition: all .2s ease-out;
+}
 
-#container input[type=radio]#button-1:checked~#images>ul { left: 0; }
-#container input[type=radio]#button-2:checked~#images>ul { left: -100%; }
-#container input[type=radio]#button-3:checked~#images>ul { left: -200%; }
-#container input[type=radio]#button-4:checked~#images>ul { left: -300%; }
-#container input[type=radio]#button-5:checked~#images>ul { left: -400%; }
+footer li a:hover{
+    color: #c5a981;
+}
+
+footer p{
+    padding: 10px 0px 10px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+
+footer ul{
+    text-align: center;
+}

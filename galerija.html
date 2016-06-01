@@ -1,84 +1,73 @@
 <!DOCTYPE html>
 <html lang="sr">
-  <head>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta author="Ana Žamos zamos.ana@gmail.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Izdvajamo iz ponude.">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta author="Ana Žamos zamos.ana@gmail.com">
-    <meta keywords="Na ovom sajtu ćete naći sva dešavanja vezana za muzičke festivale širom Evrope. Pomoću nas možete rezervisati karte koje će potom biti dostavljene na Vašu kućnu adresu.MUSICOLOGY 2015">
-      <meta name="description" content="Select travel galerija slika">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/galerija.css">
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/helpers.css">
+        <link rel="stylesheet" href="css/galerija.css">
 
-    <!--Fontovi-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,300&subset=latin-ext' rel='stylesheet' type='text/css'>
-    <!--Kraj fontova-->
-    <title>Galerija</title>
-
-
-  </head>
+        <title>Galerija</title>
+    </head>
     <body>
-    <nav class="navbar navbar-default">
-
-    <ul>
-                <li><a href="index.html" class="link">POČETNA</a></li>
-                <li><a href="lastminute.html" class="link">LAST MINUTE PONUDE</a></li>
-                <li><a href="galerija.html" class="link"> GALERIJA</a></li>
-                <li><a href="rezervacija.html" class="link">REZERVACIJA</a></li>
-            </ul>
-    </nav>
-
-<h1>IZABERITE ODGOVARAJUĆU DESTINACIJU ZA ODMOR</h1>
-
-  <div id="container">
-      <input type="radio" id="button-1" name="controls" checked="checked"/>
-      <label for="button-1"></label>
-      <input type="radio" id="button-2" name="controls"/>
-      <label for="button-2"></label>
-      <input type="radio" id="button-3" name="controls"/>
-      <label for="button-3"></label>
-      <input type="radio" id="button-4" name="controls"/>
-      <label for="button-4"></label>
-      <input type="radio" id="button-5" name="controls"/>
-      <label for="button-5"></label>
-
-      <div id="images">
-          <ul>
-              <li id="slide1">
-                  <img src="img/1.jpg" alt="Cinque Terre Italija"/>
-              </li>
-              <li id="slide2">
-                  <img src="img/2.jpg" alt="Zakintos Grčka" />
-              </li>
-              <li id="slide3">
-                  <img src="img/3.jpg" alt="Halong zaliv Vietnam" />
-              </li>
-              <li id="slide4">
-                  <img src="img/4.jpg" alt="Ljubljana Slovenia"/>
-              </li>
-              <li id="slide5">
-                  <img src="img/5.jpg" alt="Abu Dhabi Ujedinjeni Emirati"/>
-              </li>
-          </ul>
-      </div>
-
-  </div>
-
-
+        <header class="navbar navbar-default">
+                <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="SelectTravel logo firme">
+                </a>
+                <ul>
+                    <li><a href="index.html" class="link">POČETNA</a></li>
+                    <li><a href="lastminute.html" class="link">LAST MINUTE PONUDE</a></li>
+                    <li><a href="galerija.html" class="link"> GALERIJA</a></li>
+                    <li><a href="rezervacija.html" class="link">REZERVACIJA</a></li>
+                    <li><a href="kontakt.html" class="link">KONTAKT</a></li>
+                </ul>
+        </header>
+        <section class="gallery-container">
+            <input type="radio" class="slider-control" id="button-1" name="controls" checked="checked"/>
+            <label for="button-1"></label>
+            <input type="radio" class="slider-control" id="button-2" name="controls"/>
+            <label for="button-2"></label>
+            <input type="radio" class="slider-control" id="button-3" name="controls"/>
+            <label for="button-3"></label>
+            <input type="radio" class="slider-control" id="button-4" name="controls"/>
+            <label for="button-4"></label>
+            <input type="radio" class="slider-control" id="button-5" name="controls"/>
+            <label for="button-5"></label>
+            <div class="images">
+                <ul>
+                    <li id="slide1">
+                        <img src="img/1.jpg" alt="SelectTravel Cinque Terre Italija"/>
+                    </li>
+                    <li id="slide2">
+                        <img src="img/2.jpg" alt="SelectTravel Zakintos Grčka" />
+                    </li>
+                    <li id="slide3">
+                        <img src="img/3.jpg" alt="SelectTravel Halong zaliv Vietnam" />
+                    </li>
+                    <li id="slide4">
+                        <img src="img/4.jpg" alt="SelectTravel Ljubljana Slovenia"/>
+                    </li>
+                    <li id="slide5">
+                        <img src="img/5.jpg" alt="SelectTravel Abu Dhabi Ujedinjeni Emirati"/>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="divider">
         <footer>
-            <ul>
-                <li><a href="index.html">Početna</a></li>
-                <li><a href="lastminute.html">Last minute ponude</a></li>
-                <li><a href="galerija.html"> Galerija</a></li>
-                <li><a href="rezervacija.html">Rezervacija</a></li>
-
-
-            </ul>
-            <p>Copyright by Ana Žamos <br>
-            &copy 2016</p>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="lastminute.html">Last minute ponude</a></li>
+                    <li><a href="galerija.html"> Galerija</a></li>
+                    <li><a href="rezervacija.html">Rezervacija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <p>Copyright by Ana Žamos <br>&copy 2016</p>
         </footer>
-
-
     </body>
 </html>
