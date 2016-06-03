@@ -31,6 +31,8 @@ html{
 	float: right;
 }
 
+/*smanjena navigacija*/
+
 .narrow-nav {
 	display: none;
 	float: right;
@@ -46,6 +48,8 @@ html{
 .narrow-nav:hover .dropdown-content {
 	display: block;
 }
+
+/*sendvić navigacija*/
 
 .dropdown-content {
 	display: none;
@@ -76,6 +80,8 @@ html{
 	color: #c5a981;
 }
 
+/*standardna navigacija*/
+
 .standard-nav ul {
 	text-align: center;
 	margin-top: 25px;
@@ -84,6 +90,8 @@ html{
 .standard-nav ul li {
 	display: inline;
 }
+
+/*navogacija boja i detalji*/
 
 .link {
 	display: inline;
@@ -199,7 +207,7 @@ html{
 }
 
 
-/*-----------------------------------------ucitaj jos------------------------------------------------------------*/
+/*--------------učitaj jos----------------------------*/
 
 .load {
 	width: 100%;
@@ -226,7 +234,7 @@ html{
 	color: white;
 }
 
-/*-----------------------------footer-----------------------------------------------------*/
+/*--------------footer------------------*/
 
 footer ul li {
 	display: inline;
@@ -258,6 +266,8 @@ footer p{
 footer ul{
 	text-align: center;
 }
+
+/*media*/
 
 /* Extra small devices (phones, less than 768px) */
 @media screen and (max-width: 767px) { 

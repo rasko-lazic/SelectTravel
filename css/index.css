@@ -30,6 +30,8 @@ html{
 	float: right;
 }
 
+/*smanjena navigacija*/
+
 .narrow-nav {
 	display: none;
 	float: right;
@@ -45,6 +47,8 @@ html{
 .narrow-nav:hover .dropdown-content {
 	display: block;
 }
+
+/*sendvič navigacija*/
 
 .dropdown-content {
 	display: none;
@@ -75,6 +79,7 @@ html{
 	color: #c5a981;
 }
 
+/*standardna navigacija*/
 .standard-nav ul {
 	text-align: center;
 	margin-top: 25px;
@@ -84,6 +89,7 @@ html{
 	display: inline;
 }
 
+/*navigacija boja i detalji*/
 .link {
 	display: inline;
 	color: #000;
@@ -100,7 +106,7 @@ html{
 	color: #c5a981;
 }
 
-/*--------------------------------------------intro------------------------------------------------------------------------------------------*/
+/*-------------------------intro-----------------------------*/
 
 .intro {
 	width: 93.75%;
@@ -143,7 +149,7 @@ html{
 	color: #c5a981;
 }
 
-/*---------------------------------ponude-----------------------------------------------------------------------------------------------------*/
+/*-------------ponude--------------------*/
 
 .ponude {
 	text-align: center;
@@ -173,6 +179,7 @@ html{
 	overflow: hidden;
 }
 /********slike******/
+
 #ponuda-1 {
 	background-image:url('../img/karibi.jpg');
 	margin-right: 5%;
@@ -266,7 +273,7 @@ html{
   top: -5px;
 }
 
-/*---------------------------------------------------------------------------------------*/
+/*------------------------*/
 
 .divider {
 	width: 80%;
@@ -306,6 +313,8 @@ footer p{
 footer ul{
 	text-align: center;
 }
+
+/*media*/
 
 /* Extra small devices (phones, less than 768px) */
 @media screen and (max-width: 767px) { 

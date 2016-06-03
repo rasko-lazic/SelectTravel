@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta author="Ana Žamos zamos.ana@gmail.com">
-        <meta keywords="Na ovom sajtu ćete naći sva dešavanja vezana za muzičke festivale širom Evrope. Pomoću nas možete rezervisati karte koje će potom biti dostavljene na Vašu kućnu adresu.">
+        <meta keywords="Online rezervacija avio karata i aranžmana ... Select travel Vam nudi kompletnu uslugu prevoza putničkim vozilima! Kliknite ovde za više detalja.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" type="image/png" href="img/icon.png">
@@ -19,6 +19,7 @@
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="SelectTravel logo" />
             </a>
+            <!--smanjena navigacija-->
             <div class="narrow-nav">
                 <img src="fonts/menu-icon.png" class="dropdown-button">
                 <div class="dropdown-content">
@@ -31,6 +32,7 @@
                     </ul>
                 </div>
             </div>
+            <!--standardna navigacija-->
             <div class="standard-nav">
                 <ul>
                     <li><a href="index.html" class="link">POČETNA</a></li>
@@ -42,6 +44,7 @@
             </div>
         </header>
         <!--header end-->
+        <!--rezervisano ponuda-->
         <section class="reservation">
             <div class="reservation-info">
                 <h2>REZERVACIJA</h2>
@@ -65,14 +68,16 @@
                     Kabinski prtljag<br>
                     Putno zdravstveno osiguranje<br>
                 </p>
+                <!--mere predustrožnosti-->
                 <p class="security">
                     <img src="fonts/padlock-icon.png" class="float-left">
                     Rukovodstvo i zaposleni Select Travela su maksimalno posvećeni poštovanju prava privatnosti privatnih podataka koje prikupljamo od pojedinaca koji posećuju naš Sajt. Podaci su zasticeni prilokom transfera.
                 </p>
             </div>
+            <!--rezervacija forma-->
             <div class="reservation-form">
                 <div class="basic-info">
-                    <h2 class="heading">LICNI PODACI</h2>
+                    <h2 class="heading">LIČNI PODACI</h2>
                     <hr class="divider">
                     <div class="controls">
                         <input type="text" class="floatLabel" name="name">
@@ -112,7 +117,7 @@
                         <div class="col-4">
                             <div class="controls">
                                 <input type="text" class="floatLabel" name="post-code">
-                                <label for="post-code">Postanski kod</label>
+                                <label for="post-code">Poštanski kod</label>
                             </div>
                         </div>
                         <div class="col-4">
@@ -123,6 +128,7 @@
                         </div>
                     </div>
                 </div>
+                <!--detalji forma-->
                 <div class="details">
                     <h2 class="heading">Detalji</h2>
                     <hr class="divider">
@@ -154,33 +160,34 @@
                         <div class="col-3">
                             <div class="controls">
                                 <select class="floatLabel">
-                                    <option value="deluxe" selected>With Bathroom</option>
-                                    <option value="Zuri-zimmer">Without Bathroom</option>
+                                    <option value="deluxe" selected>Sa kupatilom</option>
+                                    <option value="Zuri-zimmer">Bez kupatila</option>
                                 </select>
-                                <label>Room</label>
+                                <label>Kupatilo</label>
                             </div>
                         </div>
                         <div class="col-3">
                             <div class="controls">
                                 <select class="floatLabel">
-                                    <option value="single-bed">Zweibett</option>
-                                    <option value="double-bed" selected>Doppelbett</option>
+                                    <option value="single-bed">Jednokrevetna</option>
+                                    <option value="double-bed" selected>Dvokrevetna</option>
                                 </select>
-                                <label>Bedding</label>
+                                <label>Soba</label>
                             </div>
                         </div>
                     </div>
-                    <p class="info-text">Ovde ostavite komentare o posebnim potrebama, na primer: pomocni kreveti, kolevka za bebu...</p>
+                    <p class="info-text">Ovde ostavite komentare o posebnim potrebama, na primer: pomoćni kreveti, kolevka za bebu, TV, klima...</p>
                     <br>
                     <div class="controls">
                         <textarea name="comments" class="floatLabel" id="comments"></textarea>
-                        <label for="comments">Comments</label>
+                        <label for="comments">Komentar</label>
                     </div>
-                    <button type="submit" value="Submit">Submit</button>
+                    <a href="kontakt.html"><button type="submit" value="Submit">Pošalji</abutton>
                 </div>
             </div>
         </section>
         <!--reservation end-->
+        <!--footer-->
         <hr class="divider">
         <footer>
             <ul>
@@ -188,6 +195,7 @@
                 <li><a href="lastminute.html">Last minute ponude</a></li>
                 <li><a href="galerija.html"> Galerija</a></li>
                 <li><a href="rezervacija.html">Rezervacija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
             <p>Copyright by Ana Žamos <br>&copy 2016</p>
         </footer>
