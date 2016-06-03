@@ -12,43 +12,92 @@ html{
 }
 
 .navbar {
-	background-color: #ffffff;
-	height: 70px;
-	width: 100%;
-	padding-left: 4%;
-	padding-right: 3%;
+    background-color: #ffffff;
+    height: 70px;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 3%;
 }
 
-.navbar-brand {
-	width: 8.85%;
-	height: auto;
+.navbar-brand img {
+    height: 70px;
+    width: auto;
 }
 
-.navbar ul {
-	display: inline;
-	float: right;
-	text-align: center;
-	margin-top: 25px;
+.standard-nav {
+    display: inline;
+    float: right;
 }
 
-.navbar ul li {
-	display: inline;
+.narrow-nav {
+    display: none;
+    float: right;
+    position: relative;
+}
+
+.narrow-nav img {
+    padding-top: 9px;
+    padding-right: 9px;
+    cursor: pointer;
+}
+
+.narrow-nav:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -140px;
+    min-width: 170px;
+    z-index: 110;
+}
+
+.dropdown-content ul {
+    text-align: right;
+}
+
+.dropdown-link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, .4);
+    margin: 10px 0;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.dropdown-link:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #c5a981;
+}
+
+.standard-nav ul {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.standard-nav ul li {
+    display: inline;
 }
 
 .link {
-	display: inline;
-	color: #000;
-	text-decoration: none;
-	text-align: center !important;
-	width: 150px;
-	font-size: 1em;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
-	padding-right: 40px;
+    display: inline;
+    color: #000;
+    text-decoration: none;
+    text-align: center !important;
+    width: 150px;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding-right: 40px;
 }
 
-.link:hover {
-	color: #c5a981;
+.link:hover{
+    color: #c5a981;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
@@ -92,12 +141,13 @@ html{
 	background: rgba(63,176,172, 0.4)
 }
 
-.reservation-info .security {
+.security {
 	background: rgba(0, 0, 0, .4);
 	margin-right: 80px;
 	padding: 20px;
 	text-align: left;
 	color: white;
+	font-size: 16px;
 	border-radius: 4px;
 	position: absolute;
 	bottom: 0;
@@ -138,14 +188,13 @@ h2.heading {
 
 .floatLabel {
 	padding: 12px;
-	font-size: 14px;
 	border: 1px solid #c6c6c6;
 	width: 100%;
 	margin-bottom: 18px;
 	color: #888;
 	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
 	font-weight: 300;
+	font-size: 1em;
 	border-radius: 2px;
 	transition: all 0.3s;
 }
@@ -172,7 +221,7 @@ h2.heading {
 	left: 8px;
 	top: 12px; 
 	color: #999;
-	font-size: 16px;
+	font-size: 1em;
 	display: inline-block;
 	padding: 4px 10px;
 	font-weight: 400;
@@ -254,3 +303,139 @@ footer ul{
 	text-align: center;
 }
 
+/* Extra small devices (phones, less than 768px) */
+@media screen and (max-width: 767px) { 
+	html {
+		font-size: 60%;
+	}
+
+	.navbar {
+		height: 50px;
+	}
+
+	.navbar-brand img {
+		height: 50px;
+		width: auto;
+	}
+
+	.standard-nav {
+		display: none;
+	}
+
+	.narrow-nav {
+		display: inline;
+	}
+
+	.reservation {
+		width: 95%;
+	}
+
+	.reservation-info {
+		width: 100%;
+		min-width: 375px;
+	}
+
+	.reservation-info .description {
+		margin-right: 0;
+	}
+
+	.reservation-info .description img {
+		height: 12px;
+		width: auto;
+		padding-left: 10px;
+	}
+
+	.security {
+		position: static;
+		margin: 20px 0;
+		font-size: 12px;
+	}
+
+	.reservation-form {
+		width: 100%;
+		min-width: 375px;
+	}
+
+	.controls input[type="date"] {
+	background: url(../fonts/calendar-icon-small.png) no-repeat scroll 95% 8px;
+}
+ }
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+	html {
+		font-size: 60%;
+	}
+
+	.navbar {
+		height: 50px;
+	}
+
+	.navbar-brand img {
+		height: 50px;
+		width: auto;
+	}
+
+	.reservation-info {
+		width: 100%;
+	}
+
+	.reservation-info .description img {
+		height: 12px;
+		width: auto;
+		padding-left: 10px;
+	}
+
+	.security {
+		position: static;
+		margin: 20px 50px 20px 0;
+	}
+
+	.reservation-form {
+		width: 100%;
+	}
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199px) { 
+	html {
+		font-size: 80%;
+	}
+
+	.navbar {
+		height: 60px;
+	}
+
+	.navbar-brand img {
+		height: 60px;
+		width: auto;
+	}
+
+	.reservation-info {
+		width: 100%;
+	}
+
+	.security {
+		position: static;
+		margin: 20px 50px 20px 0;
+	}
+
+	.reservation-form {
+		width: 100%;
+	}
+ }
+
+ @media screen and (min-width: 1200px) and (max-width: 1499px) { 
+ 	.reservation-info {
+		width: 100%;
+	}
+
+	.security {
+		position: static;
+		margin: 20px 50px 20px 0;
+	}
+
+	.reservation-form {
+		width: 100%;
+	}
+}
